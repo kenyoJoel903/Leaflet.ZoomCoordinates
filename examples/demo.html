@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet.ZoomCoordinates Demo Page</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	 <style>
+	   html, body, #map {
+	      height:100%;
+	      width:100%;
+	      padding:0px;
+	      margin:0px;
+	   }
+	</style>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+
+    <script type="text/javascript" src="../src/util/terraformer.js"></script>
+    <script type="text/javascript" src="../src/util/terraformer-wkt.js"></script>
+    <script type="text/javascript" src="../src/Control.ZoomCoordinates.js"></script>
+	<link rel="stylesheet" href="../src/Control.ZoomCoordinates.css"/>
+</head>
+<body>
+
+	<div id="map"></div>
+
+    <script type="text/javascript">
+
+        var mymap = L.map('map').setView([-12.067649, -75.209845], 15);
+
+        L.tileLayer('http://geocoder.geodir.co/geocoder.api/tile/v1/{z}/{x}/{y}', {
+            maxZoom: 18,
+            id: 'Geodir',
+        }).addTo(mymap);
+
+
+		L.control.zoomcoordinates({
+		    showlabel: false,
+			decimals: 6,
+			zoomDefault: 14
+	    }).addTo(mymap);
+		
+	</script>
+</body>
+</html>
