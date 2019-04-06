@@ -19,6 +19,9 @@
     <script type="text/javascript" src="../src/util/terraformer-wkt.js"></script>
     <script type="text/javascript" src="../src/Control.ZoomCoordinates.js"></script>
 	<link rel="stylesheet" href="../src/Control.ZoomCoordinates.css"/>
+
+	<script type="text/javascript" src="../src/Control.GoToXY.js"></script>
+	<link rel="stylesheet" href="../src/Control.GoToXY.css"/>
 </head>
 <body>
 
@@ -35,6 +38,12 @@
 
 
 		L.control.zoomcoordinates({
+		    showlabel: false,
+			decimals: 6,
+			zoomDefault: 14
+		}).addTo(mymap);
+		
+		L.control.geodirGotoXY ({
 		    showlabel: false,
 			decimals: 6,
 			zoomDefault: 14

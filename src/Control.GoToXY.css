@@ -1,0 +1,114 @@
+.leaflet-container .leaflet-control-gotoxy{
+	position:relative;
+	float:left;
+	background:#fff;
+	color:#1978cf;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255);
+	z-index:1000;	
+	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.leaflet-control-gotoxy .gotoxy-button{
+	display:block;
+	float:left;
+	width:35px;
+	height:35px;	
+	background: url('../src/images/xy.svg') #fff;
+	border-radius:4px;
+}
+
+.leaflet-control-gotoxy .gotoXY-title{
+	color: black;
+}
+
+.leaflet-control-gotoxy .gotoXY-div{
+	color: black;
+}
+
+.leaflet-control-gotoxy .gotoXY-label{
+	color: black;
+	margin-left: 15px;
+    font-weight: 700;
+}
+
+.leaflet-control-gotoxy .gotoXY-input{
+	background: #fff;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: .25rem;
+	width:150px;
+	height:30px;
+	line-height: 1.25;
+	padding:0 18px 0 2px;
+	margin:3px 0 3px 3px;
+}
+.leaflet-control-gotoxy .gotoXY-g{
+	background: #fff;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: .25rem;
+	width:90px;
+	height:25px;
+	line-height: 1.25;
+	padding: 0 5px 0 10px;
+	margin: 0px 0 15px 3px;
+}
+.leaflet-control-gotoxy .gotoXY-i{
+	background: #fff;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: .25rem;
+	width: 30px;
+    height: 20px;
+	line-height: 1.25;
+	padding: 0 5px 0 10px;
+	margin:3px 0 3px 3px;
+}
+
+.leaflet-control-gotoxy .gotoXY-close{
+	display:block;
+	width:22px;
+	height:18px;
+	position:absolute;
+	right:10px;
+	margin: -5px;
+	text-decoration:none;
+	filter: alpha(opacity=80);
+	opacity: 1;
+	
+}  
+.gotoXY-close span:before {
+	font-size: 18px
+}  
+
+.leaflet-control-gotoxy .gotoXY-div{
+	margin: 5px 0px;
+	
+}
+
+.leaflet-control-gotoxy .gotoXY-search{
+	padding: 10px;
+	color: white;
+}
+
+.leaflet-control-gotoxy .search-button {
+	float: right;
+    border-radius: 4px;
+    color: white;
+    margin: 10px;
+}
+.NorteSur{
+	display: inline-block;
+}
+.latlng{
+   display: block;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+
+
+
+
