@@ -154,7 +154,7 @@ L.Control.GeodirGoToXY  = L.Control.extend({
 		
 		this._optionDegrees = L.DomUtil.create('a', 'btn btn-primary btn-sm notActive', divOptions);
 		this._optionDegrees.style.cursor = "pointer";
-		this._optionDegrees.innerHTML=' Gº ';
+		this._optionDegrees.innerHTML=' G° ';
 		
 		L.DomEvent
 			.on(this._optionDegrees, 'click', L.DomEvent.stop, this)
